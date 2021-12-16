@@ -17,11 +17,7 @@ jsonResponse = requests.get('https://anime-facts-rest-api.herokuapp.com/api/v1')
 
 ##Check for status 
 jsonResponse.status_code
-jsonResponse.json()
-
+df = jsonResponse.json()
+df_dataframe = pd.DataFrame(df['data'])
 print(jsonResponse)
 
-##Get request
-
-jsonResponse2 = requests.get('https://anime-facts-rest-api.herokuapp.com/api/v1/jujutsu_kaisen')
-dataframe=pd.dataframe(jsonResponse2.json())
