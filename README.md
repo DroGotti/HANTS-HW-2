@@ -1,1 +1,1 @@
-# HANTS-HW-2
+# Connecting an API using JSON
